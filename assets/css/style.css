@@ -105,6 +105,7 @@ section.home-banner {
     height: 750px;
     background-image: url('../images/home-banner.jpg');
     background-repeat: no-repeat;
+    z-index: -1;
 }
 
 article.mypicture {
@@ -114,9 +115,9 @@ article.mypicture {
 }
 article.banner-content {
     position: absolute;
-    bottom: 25%;
-    width: 35%;
-    left: 55%;
+    bottom: 40%;
+    width: 30%;
+    left: 52%;
     line-height: 2.0;
 }
 
