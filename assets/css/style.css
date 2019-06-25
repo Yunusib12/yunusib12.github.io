@@ -101,6 +101,7 @@ div.logo {
 /* Main Content
 --------------------------------*/
 section.home-banner {
+    position: relative;
     height: 750px;
     background-image: url('../images/home-banner.jpg');
     background-repeat: no-repeat;
@@ -108,14 +109,14 @@ section.home-banner {
 
 article.mypicture {
     position: absolute;
-    bottom: 185px;
-    left: 210px;
+    bottom: -2px;
+    left: 16%;
 }
 article.banner-content {
     position: absolute;
-    bottom: 30%;
-    width: 25%;
-    left: 42%;
+    bottom: 25%;
+    width: 35%;
+    left: 55%;
     line-height: 2.0;
 }
 
