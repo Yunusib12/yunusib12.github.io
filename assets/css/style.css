@@ -33,6 +33,7 @@
 body {
     background: #1490d7;
     font-family: cursive, sans-serif;
+    background-repeat: repeat;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -224,14 +225,27 @@ progress[value] {
     margin-bottom: 15px;
   }
 
+  /* Portfolio & Contact Page Background images
+------------------------------------------------*/
+.page {
+    background: url("../images/home-banner.jpg");
+    height: -webkit-fill-available;
+}
+
+  /* Portfolio Page CSS
+------------------------------------------------*/
+
+
+
+
   /* Spacing the bottom of the page
---------------------------------*/
+--------------------------------------*/
 .clear {
     padding: 1.5%;
 }
 
 /* Footer
---------------------------------*/
+-------------------------------------*/
 
  footer {
     position: fixed;
