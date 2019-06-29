@@ -246,7 +246,7 @@ section.portfoliopage {
     width: 960px;
 }
 
-section.portfolioimages {
+section.portfoliobg {
     padding: 10px;
     background-color:rgba(5, 139, 216, 0.075);
     box-shadow: 0px 3px 4px 0px rgba(33, 150, 243, 0.25);
@@ -259,9 +259,9 @@ header h1 {
 }
 
 header hr {
-    display: inline-block;
+    display: block;
     border: 1px solid #1490d7;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 article.portfolioarticle {
@@ -316,6 +316,51 @@ article.imgcheesy {
     background: url("../images/the-cheesy-puffs-master-game.png");
 }
 
+ /* Contact Page CSS
+------------------------------------------------*/
+input[type=text], textarea {
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    background: rgb(255, 255, 255);
+  }
+
+textarea {
+    height: 200px;
+}
+
+input[type=submit] {
+    background-color: #1490d7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+section.contactform {
+    overflow: auto;
+}
+
+input[type=text]:focus, 
+textarea:focus {
+    background: rgba(255, 251, 225, 0.37);
+    box-shadow: 1px 3px 10px 3px rgba(125,204,250,1);
+}
+
+input[type=submit]:hover {
+    background-color: #026dab;
+  }
+
+  input[type=submit]:focus {
+    background-color: #026dab;
+  }
+
+  
   /* Spacing the bottom of the page
 --------------------------------------*/
 .clear {
