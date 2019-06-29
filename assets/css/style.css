@@ -1,5 +1,7 @@
 /* General Styles
 -------------------------------*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css');
+
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
@@ -23,8 +25,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
 
 * {
     box-sizing: border-box;
@@ -183,6 +183,45 @@ a.banner_btn{
 a.banner_btn:hover {
     background-position: right center;
     color: #fff;
+}
+
+
+/* Connect with me
+--------------------------------*/
+div.linkedin, div.github, div.stack {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+div.linkedin a {
+    color: #0077B5;
+    font-weight: normal;
+}
+
+div.github a {
+    color: black;
+    font-weight: normal;
+}
+
+div.stack a {
+    color: rgb(247, 140, 0);
+    font-weight: normal;
+}
+
+div.linkedin a:hover {
+    color: gray;
+    font-weight: normal;
+}
+
+div.stack a:hover {
+    color: gray;
+    font-weight: normal;
+}
+
+div.github a:hover {
+    color: gray;
+    font-weight: normal;
 }
 
 /* Sub Content
