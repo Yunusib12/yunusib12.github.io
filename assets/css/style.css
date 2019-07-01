@@ -125,7 +125,7 @@ section.home-banner {
     z-index: -1;
 }
 
-article.mypicture {
+div.mypicture {
     position: absolute;
     bottom: -2px;
     left: 16%;
