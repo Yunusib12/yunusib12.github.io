@@ -5,87 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="./assets/images/favicon.png" type="image/png" sizes="16x16">
-    <!-- Load stylesheet-->
-    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- Loading My Css File -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
     <title>Welcome to My Website - Yunus Ibrahim</title>
 </head>
 <body>
-    <div class="clearfilx">
-        <header>
-            <!-- Display the vertical line and my name as logo -->
-            <div class="logo"></div>
-            <div class="myname">Welcome to My Website</div>
-        </header>
-    </div>  
+    <nav class="navbar navbar-light">
+        <!-- Logo -->
+        <img src="./assets/images/logo-yunus-ibrahim.png" alt="Welcome to My Website">
         <!-- Main Menu -->
-        <ul class="main-menu"> 
-            <li><a class="active" href="./">Home</a></li>
-            <li><a href="#about">About</a></li>
+        <ul class="nav justify-content-end"> 
+            <li><a class="active" href="./">About</a></li>
             <li><a href="./portfolio.html">Portfolio</a></li>
             <li><a href="./contact.html">Contact</a></li>
-        </ul>  
-    <!-- Main Content Start -->    
-    <main>
-        <!-- Home Banner Area -->
-        <section class="home-banner">
-            <!-- My picture -->
-            <div class="mypicture">
-                <p><img src="./assets/images/yunusibrahim-full-stack-developer.png" alt="Yunus Ibrahim"></p>
+        </ul>   
+    </nav>
+    <!-- Main Content -->
+    <div class="container containerhomepage">
+        <div class="row topspace">
+            <div class="col-lg-4 offset-lg-2">
+                <!-- Home Banner Area -->
+                <section class="home-banner">
+                    <!-- My picture -->
+                    <div class="mypicture">
+                        <img src="./assets/images/yunusibrahim-full-stack-developer.png" alt="Yunus Ibrahim">
+                    </div>
+                </section>
             </div>
-        </section>
-        <!-- My welcome Text -->
-        <article class="banner-content">
-            <h5>This is me</h5>
-            <h2>Yunus Ibrahim</h2>
-            <p>A Full Stack Developer from USA, Maine. I have rich experience in Web Site Design, Development and Customization. Click the button bellow to learn more of what I can help you with!</p>
-            <br>
-            <h3>Conect with me on: </h3>
-            <br>
-            <!-- Connect with me -->
-            <div class="linkedin"><a href="#"><i class="fab fa-linkedin fa-3x"></i></a></div>
-            <div class="github"><a href="#"><i class="fab fa-github fa-3x"></i></a></div>
-            <div class="stack"><a href="#"><i class="fab fa-stack-overflow fa-3x"></i></a></div>    
-            <br>              
-            <a class="banner_btn" href="#about">Learn more</a>          
-        </article>   
-    <!-- Sub Content -->    
-    <section class="subcontent">
-        <!-- About me Content -->  
-        <section class="aboutme" id="about">
-            <h4 class="txtaboutme">About Myself</h4>
-            <p>
-              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-              <br>
-              <br>
-              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
-            </p>
-        </section>
-        <!-- Tools Ecpertness Content -->
-        <section class="toolexpertness">
-            <h3>Tools Expertness</h3>
+            <div class="col-lg-4">
+                <!-- My welcome Text -->
+                <article class="banner-content">
+                    <h5>Yunus Ibrahim</h5>
+                    <h2>Full Stack Web Developer</h2>
+                    <br>
+                    <h3>Conect with me on: </h3>
+                    <br>
+                    <!-- Connect with me -->
+                    <div class="linkedin"><a href="#"><i class="fab fa-linkedin fa-3x"></i></a></div>
+                    <div class="github"><a href="#"><i class="fab fa-github fa-3x"></i></a></div>
+                    <div class="stack"><a href="#"><i class="fab fa-stack-overflow fa-3x"></i></a></div>    
+                    <br>              
+                    <a class="banner_btn" href="mailto:i.yunus@afriticgroup.com"><i class="fas fa-at"></i> Email Me</a>          
+                </article>  
+            </div>  
+        </div>
+        <div class="rown subcontent">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-5 offset-1">
+                        <!-- About me Content -->  
+                        <section class="aboutme" id="about">
+                            <h4 class="txtaboutme">About Myself</h4>
+                            <p>A Full Stack Web Developer and UI/UX JavaScript Specialist from USA, Maine. I have rich experience in Web Site Design, Development and Customization.</p>
+                            <br>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p> 
+                        </section>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Tools Ecpertness Content -->
+                        <section class="toolexpertness">
+                            <h3>Tools Expertness</h3>
+                            <br>
+                            <p>HTML5</p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped html5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">85%</div>
+                            </div>
+                            <p>CSS3</p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped css bg-success" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">70%</div>
+                            </div>
+                            <p>JavaScript</p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped javascript bg-info" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">80%</div>
+                            </div>
+                            <p>jQuery</p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped jquery bg-warning" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">78%</div>
+                            </div>
+                            <p>Node.js</p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped nodejs bg-danger" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">78%</div>
+                            </div>
+                            <p>Adobe Photoshop</p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped adobephotoshop bg-dark" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">82%</div>
+                            </div>
+                            <p>Mysql</p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped mysql bg-secondary" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">87%</div>
+                            </div>             
+                        </section>      
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
                 <br>
-                <p>HTML5</p>
-                <progress max="100" value="85"></progress>  
-                <p>CSS3</p>
-                <progress max="100" value="75"></progress>
-                <p>JavaScript</p>
-                <progress max="100" value="80"></progress>
-                <p>jQuery</p>
-                <progress max="100" value="78"></progress>
-                <p>Node.js</p>
-                <progress max="100" value="78"></progress>
-                <p>Adobe Photoshop</p>
-                <progress max="100" value="80"></progress> 
-                <p>Mysql</p>
-                <progress max="100" value="87"></progress>                
-        </section>        
-    </section>    
-    </main>
-    <div class="clear"></div>
-    <!-- Footer Start-->
-    <footer>
-        <p>© 2019 Yunus Ibrahim. All Rights Reserved.</p>
-    </footer>
+                <br>
+            </div>
+            <div class="clear"></div>
+        </div>  
+    </div>
+    <footer class="sticky footer mt-auto py-3 bg-dark">
+        <div class="container myfooter">
+            <span class="text-light">© 2019 Yunus Ibrahim. All Rights Reserved.</span>
+        </div>
+    </footer>    
 </body>
 </html>

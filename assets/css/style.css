@@ -1,7 +1,13 @@
 /* General Styles
 -------------------------------*/
+
+/* Import Bootstrap */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
+/* Import Fontawesome icon */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css');
 
+/* Adding Fonts */
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
@@ -26,56 +32,15 @@
     font-style: normal;
 }
 
-* {
-    box-sizing: border-box;
-  }
-
 body {
-    background: #1490d7;
+    background: url('../images/home-banner.jpg');
     font-family: cursive, sans-serif;
     background-repeat: repeat;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Heebo", sans-serif;
-    font-weight: bold;
-}
-
-.clearfix::after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-  
 /* Header and Main Menu
 --------------------------------*/
-header {
-    margin-top: 0;
-    padding: 0;
-}
-
-div.logo {
-    margin-left:20px;
-    width: 5px;
-    height: 40px;
-    background-color: black;
-    float: left;
-}
-
-header .myname {
-    margin-bottom: 10px;
-    margin-left: 15px;
-    float: left;
-    font-size: 36px;
-}
-
-header .myname, 
-ul, 
-div.logo {
-    margin-top: 20px;
-}
-
-  ul {
+nav  ul {
     list-style-type: none;
     overflow: hidden;
     background-color: #333;
@@ -86,11 +51,7 @@ div.logo {
     z-index: 2;
   }
   
-  li {
-    float: left;
-  }
-  
-  li a {
+nav li a {
     display: block;
     padding: 14px 16px;
     color: white !important;
@@ -100,11 +61,12 @@ div.logo {
     font-weight: 400 !important;
   } 
   
-  li a:hover {
+nav  li a:hover {
+    text-decoration: none;
     background-color: #111;
   }
 
-  li a:focus {
+nav li a:focus {
     background-color: #111;
   }
   
@@ -112,57 +74,15 @@ div.logo {
     background-color: #b70000;
   }
 
+  
 /* Main Content
 --------------------------------*/
+div.containerhomepage {
+  max-width: 100% !important;
+}
 
 /* Image & Description
 --------------------------------*/
-section.home-banner {
-    position: relative;
-    height: 750px;
-    background-image: url('../images/home-banner.jpg');
-    background-repeat: no-repeat;
-    z-index: -1;
-}
-
-div.mypicture {
-    position: absolute;
-    bottom: -2px;
-    left: 16%;
-}
-article.banner-content {
-    position: absolute;
-    bottom: 40%;
-    width: 30%;
-    left: 52%;
-    line-height: 1.5;
-}
-
-article.banner-content h5 {
-    margin-bottom: 20px;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2.1px;
-}
-
-article.banner-content h2 {
-    margin-top: 0px;
-    font-size: 48px;
-    font-weight: bold;
-    font-family: "Heebo", sans-serif;
-    line-height: 1.5;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-article.banner-content p {
-    color: #777777;
-    font-family: "Aldrich", sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-}
 
 a.banner_btn{
 	padding: 15px 42px;
@@ -171,20 +91,59 @@ a.banner_btn{
 	background-size: 200% auto;
 	color: #fff;
 	display: inline-block;
-    border-radius: 5px;
-    font-family: "Aldrich", sans-serif;
+  border-radius: 5px;
+  font-family: "Aldrich", sans-serif;
 	font-size: 13px;
-    font-weight: 500;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 300ms linear 0s;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 300ms linear 0s;
 }
 
 a.banner_btn:hover {
-    background-position: right center;
-    color: #fff;
+  background-position: right center;
+  color: #fff;
 }
 
+section img {
+  width: 420px;
+}
+
+article.banner-content {
+  padding: 10px;
+}
+
+article.banner-content h5 {
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.1px;
+}
+
+article h3 {
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+article.banner-content h2 {
+  margin-top: 0px;
+  font-size: 42px;
+  font-weight: bold;
+  font-family: "Heebo", sans-serif;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+article.banner-content p {
+  color: #777777;
+  font-family: "Aldrich", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
 
 /* Connect with me
 --------------------------------*/
@@ -224,199 +183,211 @@ div.github a:hover {
     font-weight: normal;
 }
 
+
 /* Sub Content
 --------------------------------*/
-section.subcontent {
-    width: 75%;
-    margin: 1% auto;
+div.subcontent {
+  background: #1873e8;
+  width: 85%;
+  margin: 0 auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 /* About Me
 --------------------------------*/
-section.aboutme {
-    display: inline-block;
-    width: 50%;
-    line-height: 1.5;
-}
-
-.txtaboutme {
-    margin-bottom: 20px;
-    color: white;
-    font-size: 36px;
-    text-transform: uppercase;
+section .txtaboutme {
+  margin: 20px 0;
+  color: white;
+  font-size: 36px;
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* Tool Expertness
 --------------------------------*/
 section.toolexpertness {
-    display: inline-block;
-    margin: 0;
-    padding: 30px 35px;
-    width: 41%;
-    border-radius: 5px;
-    box-shadow: 0px 8px 30px 0px rgba(153, 153, 153, 0.1);
-    background-color:rgba(255,255,255,0.9)
+  margin-top: 6%;
+  padding: 30px 35px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 8px 30px 0px rgba(153, 153, 153, 0.1);
+  background-color:rgba(255,255,255,0.9);
 }
 
 section h3{
-    color: black;
-    font-size: 21px;
-    text-transform: uppercase;
+  color: black;
+  font-size: 21px;
+  text-transform: uppercase;
 }
 
-progress[value] {
-    width: 90%;
-    height: 20px;
-    margin-bottom: 15px;
-  }
+div.html5 {
+  width: 85%;
+}
 
-  /* Portfolio & Contact Page Background images
-------------------------------------------------*/
-.page {
-    background: url("../images/home-banner.jpg");
-    height: -webkit-fill-available;
+div.css {
+  width: 70%;
+}
+
+div.javascript {
+  width: 80%;
+}
+
+div.jquery {
+  width: 78%;
+}
+
+div.nodejs {
+  width: 78%;
+}
+
+div.adobephotoshop {
+  width: 82%;
+}
+
+div.mysql {
+  width: 87%;
+}
+
+section p {
+  margin: 0;
+  font-size: 17px;
 }
 
   /* Portfolio Page CSS
 ------------------------------------------------*/
-section.portfoliopage {
-    margin: 0 auto;
-    padding-top: 10%;
-    width: 960px;
+div.portfoliopage {
+  margin: 0 auto;
+  padding-top: 10%;
 }
 
-section.portfoliobg {
-    padding: 10px;
-    background-color:rgba(5, 139, 216, 0.075);
-    box-shadow: 0px 3px 4px 0px rgba(33, 150, 243, 0.25);
-    border-radius: 10px;
+div.contactpage {
+  margin: 0 auto;
+  padding-top: 10%;
+}
+
+div.contactpagewidth {
+  width: 68%;
+  margin-left: 5%;
+}
+
+div.portfoliobg {
+  padding: 10px;
+  background-color:rgba(5, 139, 216, 0.075);
+  box-shadow: 0px 3px 4px 0px rgba(33, 150, 243, 0.25);
+  border-radius: 10px;
 }
 
 header h1 {
-    font-size: 30px;
-    color: #1490d7;
+  color: #1873e8;
+  font-family: "Heebo", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 header hr {
-    display: block;
-    border: 1px solid #1490d7;
-    margin-bottom: 30px;
+  display: block;
+  border: 1px solid #1873e8;
+  margin-bottom: 30px;
+}
+
+div.rowalign {
+  margin-left: 2.5%;
 }
 
 article.portfolioarticle {
-    display: inline-block;
-    margin-right: 10px;
-    margin-bottom: 30px;
-    width: 300px;
-    height: 200px;
-    border-radius: 10px;
-    background-size: 300px 250px !important;
-    box-shadow: 0px 3px 4px 0px rgba(85, 87, 88, 0.25);
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  background-size: 300px 250px !important;
+  box-shadow: 0px 3px 4px 0px rgba(85, 87, 88, 0.25);
 }
 
 div.portfoliotitle {
-    position: relative;
-    padding: 10px;
-    top: 65%;
-    text-align: center;
-    background: rgba(33, 150, 243, 0.91);
+  position: relative;
+  padding: 10px;
+  top: 65%;
+  text-align: center;
+  background: rgba(33, 150, 243, 0.91);
 }
 
 div a {
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 div a:hover {
-    color: black;
+  color: black;
+  text-decoration: none;
 }
 article.imgnamimi {
-    background: url("../images/namimi-web-thumbnail.png");
+  background: url("../images/namimi-web-thumbnail.png");
 }
 
 article.imgmfs {
-    background: url("../images/mfs-web-thumbnail.png");
+  background: url("../images/mfs-web-thumbnail.png");
 }
 
 article.imgsrc {
-    background: url("../images/src-web-thumbnail.png");
+  background: url("../images/src-web-thumbnail.png");
 }
 
 article.imgwatchad {
-    background: url("../images/watchad-web-thumbnail.png");
+  background: url("../images/watchad-web-thumbnail.png");
 }
 
 article.imgfs {
-    background: url("../images/fondationstamm-web-thumbnail.png");
+  background: url("../images/fondationstamm-web-thumbnail.png");
 }
 
 article.imgcheesy {
-    background: url("../images/the-cheesy-puffs-master-game.png");
+  background: url("../images/the-cheesy-puffs-master-game.png");
 }
 
- /* Contact Page CSS
-------------------------------------------------*/
-input[type=text], textarea {
-    margin: 10px 0;
-    padding: 12px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-    background: rgb(255, 255, 255);
-  }
-
-textarea {
-    height: 200px;
-}
-
-input[type=submit] {
-    background-color: #1490d7;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-}
-
-section.contactform {
-    overflow: auto;
-}
-
-input[type=text]:focus, 
-textarea:focus {
-    background: rgba(255, 251, 225, 0.37);
-    box-shadow: 1px 3px 10px 3px rgba(125,204,250,1);
-}
-
-input[type=submit]:hover {
-    background-color: #026dab;
-  }
-
-  input[type=submit]:focus {
-    background-color: #026dab;
-  }
-
-  
   /* Spacing the bottom of the page
 --------------------------------------*/
 .clear {
-    padding: 1.5%;
+  padding: 1.5%;
 }
 
 /* Footer
 -------------------------------------*/
 
- footer {
+footer.sticky {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+div.myfooter {
+  text-align: center;
+  font-size: 12px;
+}
+
+
+/* Media Query for mobile
+-------------------------------------*/
+
+@media only screen and (max-width: 640px) {
+
+  div.contactpagewidth {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  div.rowalign {
+    margin-left: 11%;
+  }
+
+  footer.sticky {
     position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
-    font-size: 12px;
-    color: white;
-    text-align: center;
-    line-height: 44px;
-    background-color: #333;
- }
+}
+
+}
