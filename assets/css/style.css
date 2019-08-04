@@ -379,6 +379,10 @@ article.imgcrystalcollector {
     background: url("../images/crystal-game-thumbnail.png");
 }
 
+article.imgTriviaGame {
+    background: url("../images/trivia-game-thumbnail.png");
+}
+
 
 /* Spacing the bottom of the page
 --------------------------------------*/
