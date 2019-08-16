@@ -387,6 +387,10 @@ article.imgMangaUniverse {
     background: url("../images/mangas-universe-thumbnail.png");
 }
 
+article.imgTrainSchedule {
+    background: url("../images/train-schedule-thumbnail.jpg");
+}
+
 
 /* Spacing the bottom of the page
 --------------------------------------*/
