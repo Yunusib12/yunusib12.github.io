@@ -1,0 +1,434 @@
+/* General Styles
+-------------------------------*/
+
+
+/* Import Bootstrap */
+
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
+/* Import Fontawesome icon */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css');
+
+/* Adding Fonts */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'), url('../fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Heebo';
+    src: url('../fonts/heebo-regular-webfont.woff2') format('woff2'), url('../fonts/heebo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aldrich';
+    src: url('../fonts/aldrich-regular-webfont.woff2') format('woff2'), url('../fonts/aldrich-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: url('../images/home-banner.jpg');
+    font-family: cursive, sans-serif;
+    background-repeat: repeat;
+}
+
+
+/* Header and Main Menu
+--------------------------------*/
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    float: right;
+    z-index: 2;
+}
+
+nav li a {
+    display: block;
+    padding: 14px 16px;
+    color: white !important;
+    font-size: 16px !important;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400 !important;
+}
+
+nav li a:hover {
+    text-decoration: none;
+    background-color: #111;
+}
+
+nav li a:focus {
+    background-color: #111;
+}
+
+.active {
+    background-color: #b70000;
+}
+
+
+/* Main Content
+--------------------------------*/
+
+div.containerhomepage {
+    max-width: 100% !important;
+}
+
+
+/* Image & Description
+--------------------------------*/
+
+a.banner_btn {
+    padding: 15px 42px;
+    line-height: 1.5;
+    background-image: linear-gradient(to right, #8490ff 0%, #62bdfc 48%, #8490ff 100%);
+    background-size: 200% auto;
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    font-family: "Aldrich", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 300ms linear 0s;
+}
+
+a.banner_btn:hover {
+    background-position: right center;
+    color: #fff;
+}
+
+section img {
+    width: 420px;
+}
+
+article.banner-content {
+    padding: 10px;
+}
+
+article.banner-content h5 {
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+}
+
+article h3 {
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+article.banner-content h2 {
+    margin-top: 0px;
+    font-size: 42px;
+    font-weight: bold;
+    font-family: "Heebo", sans-serif;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+article.banner-content p {
+    color: #777777;
+    font-family: "Aldrich", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* Connect with me
+--------------------------------*/
+
+div.linkedin,
+div.github,
+div.stack {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+div.linkedin a {
+    color: #0077B5;
+    font-weight: normal;
+}
+
+div.github a {
+    color: black;
+    font-weight: normal;
+}
+
+div.stack a {
+    color: rgb(247, 140, 0);
+    font-weight: normal;
+}
+
+div.linkedin a:hover {
+    color: gray;
+    font-weight: normal;
+}
+
+div.stack a:hover {
+    color: gray;
+    font-weight: normal;
+}
+
+div.github a:hover {
+    color: gray;
+    font-weight: normal;
+}
+
+
+/* Sub Content
+--------------------------------*/
+
+div.subcontent {
+    background: #1873e8;
+    width: 85%;
+    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+/* About Me
+--------------------------------*/
+
+section .txtaboutme {
+    margin: 20px 0;
+    color: white;
+    font-size: 36px;
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* Tool Expertness
+--------------------------------*/
+
+section.toolexpertness {
+    margin-top: 6%;
+    padding: 30px 35px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 8px 30px 0px rgba(153, 153, 153, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+section h3 {
+    color: black;
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+div.html5 {
+    width: 85%;
+}
+
+div.css {
+    width: 70%;
+}
+
+div.javascript {
+    width: 80%;
+}
+
+div.jquery {
+    width: 78%;
+}
+
+div.nodejs {
+    width: 78%;
+}
+
+div.adobephotoshop {
+    width: 82%;
+}
+
+div.mysql {
+    width: 87%;
+}
+
+section p {
+    margin: 0;
+    font-size: 17px;
+}
+
+
+/* Portfolio Page CSS
+------------------------------------------------*/
+
+div.portfoliopage {
+    margin: 0 auto;
+    padding-top: 10%;
+}
+
+div.contactpage {
+    margin: 0 auto;
+    padding-top: 10%;
+}
+
+div.contactpagewidth {
+    width: 68%;
+    margin-left: 5%;
+}
+
+div.portfoliobg {
+    padding: 10px;
+    background-color: rgba(5, 139, 216, 0.075);
+    box-shadow: 0px 3px 4px 0px rgba(33, 150, 243, 0.25);
+    border-radius: 10px;
+}
+
+header h1 {
+    color: #1873e8;
+    font-family: "Heebo", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header hr {
+    display: block;
+    border: 1px solid #1873e8;
+    margin-bottom: 30px;
+}
+
+div.rowalign {
+    margin-left: 2.5%;
+}
+
+article.portfolioarticle {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    background-size: 300px 250px !important;
+    box-shadow: 0px 3px 4px 0px rgba(85, 87, 88, 0.25);
+}
+
+div.portfoliotitle {
+    position: relative;
+    padding: 10px;
+    top: 65%;
+    text-align: center;
+    background: rgba(33, 150, 243, 0.91);
+}
+
+div a {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+div a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+article.imgnamimi {
+    background: url("../images/namimi-web-thumbnail.png");
+}
+
+article.imgmfs {
+    background: url("../images/mfs-web-thumbnail.png");
+}
+
+article.imgsrc {
+    background: url("../images/src-web-thumbnail.png");
+}
+
+article.imgwatchad {
+    background: url("../images/watchad-web-thumbnail.png");
+}
+
+article.imgfs {
+    background: url("../images/fondationstamm-web-thumbnail.png");
+}
+
+article.imgcheesy {
+    background: url("../images/the-cheesy-puffs-master-game.png");
+}
+
+article.imgpsychic {
+    background: url("../images/psychic-game-thumbnail.png");
+}
+
+article.imgwordguess {
+    background: url("../images/word-guess-game-thumbnail.png");
+}
+
+article.imgcrystalcollector {
+    background: url("../images/crystal-game-thumbnail.png");
+}
+
+article.imgTriviaGame {
+    background: url("../images/trivia-game-thumbnail.png");
+}
+
+article.imgMangaUniverse {
+    background: url("../images/mangas-universe-thumbnail.png");
+}
+
+article.imgTrainSchedule {
+    background: url("../images/train-schedule-thumbnail.jpg");
+}
+
+
+/* Spacing the bottom of the page
+--------------------------------------*/
+
+.clear {
+    padding: 1.5%;
+}
+
+
+/* Footer
+-------------------------------------*/
+
+footer.sticky {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+div.myfooter {
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/* Media Query for mobile
+-------------------------------------*/
+
+@media only screen and (max-width: 640px) {
+    div.contactpagewidth {
+        width: 100%;
+        margin-left: 0;
+    }
+    div.rowalign {
+        margin-left: 11%;
+    }
+    footer.sticky {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
