@@ -12,21 +12,24 @@ Some of the technologies which are showcased in my projects include:
 
 [Ibrahim Yunus](https://yunusibrahim.me/)
 
-### Technologies Used
+### My skill sets
 
-- NodeJS
-- Express
-- ES6
-- ReactJS
-- Angular
-- MySql (& Sequelize)
-- MongoDB (& mongoose)
-- Jquery
-- AJAX/Axios
 - HTML5
 - CSS3
-- Vb.net
-- PHP
 - Boostrap/Materialize CSS
+- JavaScript
+- Jquery
+- AJAX/Axios
+- JSON
+- Vb.net
+- ReactJS
+- PHP
+- Node.JS
+- Express.JS
+- MySql (& Sequelize)
+- MongoDB (& mongoose)
+- SQL Server
+- Amazon Web Services (AWS)
 - GitHub
 - Heroku - For deployment
+- Trello / Asana
