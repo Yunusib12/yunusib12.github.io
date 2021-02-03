@@ -32,3 +32,6 @@ Some of the technologies which are showcased in my projects include:
 - GitHub
 - Heroku - For deployment
 - Trello / Asana
+- Vagran 
+- Docker
+- Jenkins
