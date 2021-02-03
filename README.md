@@ -13,7 +13,6 @@ Some of the technologies which are showcased in my projects include:
 [Ibrahim Yunus](https://yunusibrahim.me/)
 
 ### My skill sets
-
 - HTML5
 - CSS3
 - Boostrap/Materialize CSS
@@ -29,7 +28,7 @@ Some of the technologies which are showcased in my projects include:
 - MySql (& Sequelize)
 - MongoDB (& mongoose)
 - SQL Server
-- Amazon Web Services (AWS)
+- Amazon Web Services AWS (s3 bucket, DynamoDB, Lambda function, API Gateway, EC2, IAM, SNS)
 - GitHub
 - Heroku - For deployment
 - Trello / Asana
