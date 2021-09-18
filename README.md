@@ -15,7 +15,8 @@ Some of the technologies which are showcased in my projects include:
 ### My skill sets
 - HTML5
 - CSS3
-- Boostrap/Materialize CSS
+- Bootstrap/Materialize CSS
+- Typescript
 - JavaScript
 - Jquery
 - AJAX/Axios
